@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "secret-santa"
+version = "1.0.0"
+description = "A Secret Santa lottery for families that avoids pairing partners"
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [
+    { name = "Javier Espigares Martin" },
+]
+keywords = ["secret santa", "christmas", "lottery", "gift exchange", "family"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+    "Environment :: Console",
+    "Topic :: Games/Entertainment",
+]
+requires-python = ">=3.7"
+# No third-party dependencies — uses the Python standard library only.
+
+[project.scripts]
+# After `pip install .`, run the draw with:  secret-santa participants.json message.html
+secret-santa = "secret_santa:main"
+
+[tool.setuptools]
+# Tell setuptools to package the single-file module at the project root.
+py-modules = ["secret_santa"]
