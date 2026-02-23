@@ -1,36 +1,46 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
 
-#Ignore thumbnails created by Windows
+# Distribution / packaging
+*.egg-info/
+*.egg
+dist/
+build/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# pip install editable mode
+*.pth
+
+# Test and coverage reports
+.tox/
+.coverage
+.coverage.*
+.pytest_cache/
+htmlcov/
+
+# IDE and editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# macOS
+.DS_Store
+
+# Windows
 Thumbs.db
-#Ignore files built by Visual Studio
-*.obj
-*.exe
-*.pdb
-*.user
-*.aps
-*.pch
-*.vspscc
-*_i.c
-*_p.c
-*.ncb
-*.suo
-*.tlb
-*.tlh
-*.bak
-*.cache
-*.ilk
-*.log
-[Bb]in
-[Dd]ebug*/
-*.lib
-*.sbr
-obj/
-[Rr]elease*/
-_ReSharper*/
-[Tt]est[Rr]esult*
-.vs/
-#Nuget packages folder
-packages/
 
-#outputdir
+# Logs (generated at runtime — do not commit)
+*.log
+
+# Output directories (contain personal draw results — do not commit)
 out/
 data/

@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Alice",
+    "not_allowed": ["Bob"],
+    "email": "alice@example.com"
+  },
+  {
+    "name": "Bob",
+    "not_allowed": ["Alice"],
+    "email": "bob@example.com"
+  },
+  {
+    "name": "Charlie",
+    "not_allowed": ["Diana"],
+    "email": "charlie@example.com"
+  },
+  {
+    "name": "Diana",
+    "not_allowed": ["Charlie"],
+    "email": "diana@example.com"
+  },
+  {
+    "name": "Eve",
+    "not_allowed": [],
+    "email": "eve@example.com"
+  },
+  {
+    "name": "Frank",
+    "not_allowed": [],
+    "email": "frank@example.com"
+  }
+]
